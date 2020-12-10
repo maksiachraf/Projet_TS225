@@ -1,5 +1,0 @@
-function I_util = extract_util(I_bin)
-
-I_util=
-end
-

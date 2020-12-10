@@ -1,6 +1,0 @@
-function muk = mu(Hist,k)
-%MU Summary of this function goes here
-%   Detailed explanation goes here
-muk=sum(Hist(1:k))/sum(Hist);
-end
-
