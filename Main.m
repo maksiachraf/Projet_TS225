@@ -65,5 +65,13 @@ imshow(uint8(I_ut));
 
 I_ut_bin=Binarize_sig(I_ut,Seuil);
 
+[DIGITS,CATS]=decode_sig(u_base,I_ut_bin);
 figure;
 plot(I_ut_bin);
+
+
+
+
+
+
+
