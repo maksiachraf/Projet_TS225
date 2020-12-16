@@ -1,39 +1,42 @@
 function [decoded_sig,cat_list]=decode_sig(u,I_bin) 
 
-pos=1;
+
 
 decoded_sig=zeros(1,12);
 cat_list=zeros(1,12);
 
+pos=1;
+
 In_g=I_bin(pos:u*3);
-pos=u*3+1
+pos=pos+u*3;
 I1_g=I_bin(pos:pos+u*7-1);
-pos=pos+u*7
+pos=pos+u*7;
 I2_g=I_bin(pos:pos+u*7-1);
-pos=pos+u*7
+pos=pos+u*7;
 I3_g=I_bin(pos:pos+u*7-1);
-pos=pos+u*7
+pos=pos+u*7;
 I4_g=I_bin(pos:pos+u*7-1);
-pos=pos+u*7
+pos=pos+u*7;
 I5_g=I_bin(pos:pos+u*7-1);
-pos=pos+u*7
+pos=pos+u*7;
 I6_g=I_bin(pos:pos+u*7-1);
-pos=pos+u*7
+pos=pos+u*7;
 I_c=I_bin(pos:pos+u*5-1);
-pos=pos+u*5
+pos=pos+u*5;
 I1_d=I_bin(pos:pos+u*7-1);
-pos=pos+u*7
+pos=pos+u*7;
 I2_d=I_bin(pos:pos+u*7-1);
-pos=pos+u*7
+pos=pos+u*7;
 I3_d=I_bin(pos:pos+u*7-1);
-pos=pos+u*7
+pos=pos+u*7;
 I4_d=I_bin(pos:pos+u*7-1);
-pos=pos+u*7
+pos=pos+u*7;
 I5_d=I_bin(pos:pos+u*7-1);
-pos=pos+u*7
+pos=pos+u*7;
 I6_d=I_bin(pos:pos+u*7-1);
-pos=pos+u*7
+pos=pos+u*7;
 In_d=I_bin(pos:pos+u*3-1);
+
 
 [decoded_sig(1),cat_list(1)]=decode_digit(I1_g,u);
 [decoded_sig(2),cat_list(2)]=decode_digit(I2_g,u);

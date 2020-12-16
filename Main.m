@@ -7,7 +7,7 @@ N=256;
 
 %% deploiement rayon
 
-I=double(rgb2gray(imread('./img/danone.jpg')));
+I=double(rgb2gray(imread('./img/barcode2.jpg')));
 
 figure;
 imshow(uint8(I));
